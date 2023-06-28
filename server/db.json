@@ -1,0 +1,159 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 25,
+      "address": "NoWhere"
+    },
+    {
+      "id": 2,
+      "name": "Jason Bourne",
+      "age": 34,
+      "address": "Unknown"
+    },
+    {
+      "id": 3,
+      "name": "William Norton",
+      "age": 30,
+      "address": "One Place"
+    },
+    {
+      "id": 4,
+      "name": "Mike Motown",
+      "age": 38,
+      "address": "The Next Place"
+    },
+    {
+      "id": 5,
+      "name": "Mike Zambia",
+      "age": 22,
+      "address": "The Final Place"
+    },
+    {
+      "id": 6,
+      "name": "David Lucani",
+      "age": 32,
+      "address": "The Last Frontier"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "Game Developer"
+    },
+    {
+      "id": 2,
+      "name": "Backend Developer"
+    },
+    {
+      "id": 3,
+      "name": "Frontend Developer"
+    },
+    {
+      "id": 4,
+      "name": "Mobile App Developer"
+    }
+  ],
+  "competences": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "skillId": 1
+    },
+    {
+      "id": 2,
+      "studentId": 1,
+      "skillId": 2
+    },
+    {
+      "id": 3,
+      "studentId": 2,
+      "skillId": 1
+    },
+    {
+      "id": 4,
+      "studentId": 2,
+      "skillId": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "john.doe@gmail.com",
+      "password": "$2a$10$DlFbwERvbHDRqdIN8ar4ae6IBPvMScocfZ7ndNowpGavI1f65CN7i",
+      "id": 1
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$6qlrqlH6usiIlUo/tYuPIuo0KMmlTea9Ocx2evQSJHSz7FGlMYbTG",
+      "id": 2
+    },
+    {
+      "email": "olivier2@mail.com",
+      "password": "$2a$10$MN4bpYZ7OMUiDFxxd372ZevjQcjOxQW892LBQ3H2.99Zp1CxpVmWK",
+      "id": 3
+    },
+    {
+      "email": "olivier3@mail.com",
+      "password": "$2a$10$g5oiWnH7JW/Skz89o920dul3XxstnWJsJ6BpfljUyiDKCAm0VpHT2",
+      "id": 4
+    },
+    {
+      "email": "olivier4@mail.com",
+      "password": "$2a$10$THFW3t5i/dFn4uzhLPC.Heh8Z4By9loTFwq8fHKePgl.ZDfQJLvx.",
+      "id": 5
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "curse": "comunicacion",
+      "p1": 5,
+      "p2": 2,
+      "exSemestral": 9,
+      "exFinal": 4
+    }
+  ],
+  "evaluaciones": [
+    {
+      "id": 1,
+      "curso": "Matemática",
+      "tipo": "Evaluación mensual",
+      "disponibilidad": "Disponible",
+      "fechaInicio": "12/05/2023 11:00",
+      "fechaFin": "12/05/2023 12:30"
+    },
+    {
+      "id": 2,
+      "curso": "Arte",
+      "tipo": "Evaluación Semestral",
+      "disponibilidad": "No Disponible",
+      "fechaInicio": "13/05/2023 09:00",
+      "fechaFin": "13/05/2023 11:00"
+    },
+    {
+      "id": 3,
+      "curso": "Comunicación",
+      "tipo": "Control Virtual",
+      "disponibilidad": "No Disponible",
+      "fechaInicio": "13/05/2023 09:00",
+      "fechaFin": "13/05/2023 11:00"
+    },
+    {
+      "curso": "Ciencia",
+      "tipo": "Evaluación de Unidad",
+      "disponibilidad": "Disponible",
+      "fechaInicio": "4/05/2023 8:00",
+      "fechaFin": "4/05/2023 11:00",
+      "id": 4
+    },
+    {
+      "curso": "adsda",
+      "tipo": "adsad",
+      "disponibilidad": "dasdas",
+      "fechaInicio": "dasdasd",
+      "fechaFin": "dasas",
+      "id": 5
+    }
+  ]
+}

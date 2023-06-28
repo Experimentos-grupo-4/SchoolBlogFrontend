@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <div>
+    <img src="assets/img/logo.png" width="150px">
+  </div>
+  <div class="mat-spacer"></div>
+  <!-- App Options -->
+  <a mat-button [routerLink]="'/home'">
+    <span class="material-icons">home</span>
+  </a>
+  <a mat-button [routerLink]="'/notifications'">
+    <span class="material-icons">notifications</span>
+  </a>
+  <a mat-button [routerLink]="'/home'">
+    <span class="material-icons">account_circle</span>
+  </a>
+  <!--
+  <mat-divider [vertical]="true" [inset]="true"></mat-divider>
+  <a *ngIf="getCurrentUserEmail() === null" mat-button [routerLink]="'/sign-in'">Sign-In</a>
+  <div *ngIf="getCurrentUserEmail">
+    <a mat-button>{{ getCurrentUserEmail() }}</a>
+    <a mat-button (click)="signOut()">Sign-Out</a>
+
+  </div> -->
+</mat-toolbar>
+<router-outlet></router-outlet>
+<app-sidenav></app-sidenav>
+

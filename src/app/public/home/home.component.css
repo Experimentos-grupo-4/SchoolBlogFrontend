@@ -1,0 +1,44 @@
+h1{
+  font-family:'Arial Narrow Bold';
+  font-size: 30px;
+  margin-left: 20px;
+}
+h2{
+  margin-left: 20px;
+}
+
+div.noticia1 {
+  width: 100%;
+  margin: 20px auto;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+}
+
+div.noticia1 img.izquierda {
+  float: left;
+  margin-right: 20px;
+}
+
+div.noticia1 {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+div.noticia2 {
+  width: 100%;
+  margin: 20px auto;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+}
+
+div.noticia2 img.izquierda {
+  float: left;
+  margin-right: 20px;
+}
+
+div.noticia2 {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
