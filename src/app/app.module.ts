@@ -34,6 +34,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import {ProfesorService} from "./profesor/services/profesor.service";
+import { ComponentNameComponent } from './component-name/component-name.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import {ProfesorService} from "./profesor/services/profesor.service";
     CoursesComponent,
     PersonalDataComponent,
     EvaluacionesComponent,
-    SubjectsComponent
+    SubjectsComponent,
+    ComponentNameComponent
   ],
   imports: [
     BrowserModule,
