@@ -8,6 +8,8 @@ import {EvaluacionesComponent} from "./profesor/pages/evaluaciones/evaluaciones.
 import {SubjectsComponent} from "./subjects/pages/subjects/subjects.component";
 
 const routes: Routes = [
+  { path: '', component: SignInComponent },
+
   { path: 'home', component: HomeComponent },
   { path: 'courses', component: CoursesComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
