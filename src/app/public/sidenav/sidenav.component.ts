@@ -17,12 +17,8 @@ export class SidenavComponent implements OnInit {
     {"name":"Courses", "route":"courses",icon:"school"},
     {"name":"Notificaciones", "route":"Notificaciones",icon:"notifications"},
     {"name":"Videoconferencias", "route":"Videoconferencias",icon:"play_lesson"},
-    {"name":"Mensajes", "route":"Mensajes",icon:"email"},
-    {"name":"Foro", "route":"Foro",icon:"forum"},
-    {"name":"Biblioteca", "route":"Biblioteca",icon:"library_books"},
     {"name":"Evaluaciones", "route":"evaluaciones",icon:"check"},
     {"name":"Calificaciones", "route":"subjects",icon:"grade"},
-    {"name":"Encuestas", "route":"Encuestas",icon:"poll"},
     {"name":"Cerrar sesión", "route":"Cerrar sesión",icon:"logout"}
 
   ]
