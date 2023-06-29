@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {UntypedFormBuilder, UntypedFormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {AuthService} from "../../services/auth.service";
 import {Router} from "@angular/router";
 
@@ -9,9 +9,9 @@ import {Router} from "@angular/router";
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent  {
-  signInForm: UntypedFormGroup;
+  signInForm: FormGroup;
 
-  constructor(public builder: UntypedFormBuilder,
+  constructor(public builder: FormBuilder,
               public authService: AuthService,
               public router: Router) {
     this.signInForm = this.builder.group({
