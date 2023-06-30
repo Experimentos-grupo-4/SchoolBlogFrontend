@@ -1,0 +1,22 @@
+<div class="container row">
+  <mat-card class="col-lg-4 col-md-6 col-sm-7 col-xs-10">
+    <div class="button-container">
+      <button mat-mini-fab color="primary" routerLink="/auth/signin">
+        <mat-icon>keyboard_backspace</mat-icon>
+      </button>
+    </div>
+    <mat-card-title>Reiniciar contraseña</mat-card-title>
+    <mat-card-content>
+      <form>
+        <mat-form-field>
+          <input matInput placeholder="Correo electrónico" type="email" />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit">
+          Enviar correo con instrucciones
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+

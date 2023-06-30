@@ -1,0 +1,23 @@
+<div class="container row">
+  <mat-card class="col-lg-4 col-md-6 col-sm-7 col-xs-10">
+    <mat-card-title>Iniciar Sesión</mat-card-title>
+    <mat-card-content>
+      <form>
+        <mat-form-field>
+          <input matInput placeholder="Correo electrónico" type="email" />
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Contraseña" type="password" />
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">
+          Iniciar Sesión
+        </button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" routerLink="/auth/reset">¿Olvidaste tu contraseña?</button>
+      <button mat-button color="primary" routerLink="/auth/signup">¿No tienes cuenta?</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

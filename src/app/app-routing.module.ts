@@ -9,6 +9,10 @@ import {SubjectsComponent} from "./subjects/pages/subjects/subjects.component";
 import {PersonalDataComponent} from "./personal-data/pages/personal-data/personal-data.component";
 
 const routes: Routes = [
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+  },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'personal-data', component: PersonalDataComponent },
