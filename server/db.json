@@ -102,6 +102,16 @@
       "email": "olivier4@mail.com",
       "password": "$2a$10$THFW3t5i/dFn4uzhLPC.Heh8Z4By9loTFwq8fHKePgl.ZDfQJLvx.",
       "id": 5
+    },
+    {
+      "email": "peter@gmail.com",
+      "password": "$2a$10$pixLdPMsClb6K17IkTGQ/.10U77LMRFKZlgW2KeY58Fhu7bYFzCJy",
+      "name": "peter",
+      "lastname": "peter",
+      "phone": "987582640",
+      "address": "calle A",
+      "birthday": "2000-06-06",
+      "id": 6
     }
   ],
   "subjects": [
