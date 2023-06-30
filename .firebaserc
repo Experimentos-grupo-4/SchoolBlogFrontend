@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "scoolblog-5a151"
-  }
+    "default": "scoolblog-5a151",
+    "school-blog": "school-blog-59165"
+  },
+  "targets": {},
+  "etags": {}
 }
