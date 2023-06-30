@@ -1,0 +1,13 @@
+h2{
+  margin-left: 20px;
+
+}
+div.personal-data{
+  margin-left: 20px;
+  color: gray;
+}
+a{
+  background-color:#486284 ;
+  color: white;
+  justify-self: center;
+}

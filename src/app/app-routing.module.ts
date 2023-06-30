@@ -6,15 +6,14 @@ import { HomeComponent } from './public/home/home.component';
 import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 import {EvaluacionesComponent} from "./profesor/pages/evaluaciones/evaluaciones.component";
 import {SubjectsComponent} from "./subjects/pages/subjects/subjects.component";
+import {PersonalDataComponent} from "./personal-data/personal-data.component";
 
 const routes: Routes = [
-  { path: '', component: SignInComponent },
-
   { path: 'home', component: HomeComponent },
-  { path: 'courses', component: CoursesComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'personal-data', component: PersonalDataComponent },
+  { path: 'courses', component: CoursesComponent },
   { path: 'students', component: StudentsComponent },
-  { path: 'sign-in', component: SignInComponent },
   { path: 'evaluaciones', component: EvaluacionesComponent},
   { path: 'subjects', component: SubjectsComponent}
 ];
