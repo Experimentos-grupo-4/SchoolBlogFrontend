@@ -1,0 +1,48 @@
+.seccion {
+  width: 400px;
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.seccion:hover {
+  background-color: #486284;
+  color: white;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+.activo {
+  background-color: #486284;
+  color: white;
+}
+
+.contenedor {
+  display: flex;
+  gap: 30px;
+}
+
+.botones {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #486284;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.margen {
+  margin-left: 50px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,27 @@
+<div>
+  <img src="assets/img/header1.png">
+</div>
+
+<div class="margen">
+  <div>
+    <br> <br> <br>
+    <h2><strong>CURSOS</strong></h2>
+  </div>
+  <div>
+    <h4>Salon A | Matemática</h4>
+
+    <div class="contenedor">
+      <div id="myid" class="semanas">
+        <div class="seccion titulo">Semanas</div>
+        <div class="seccion" *ngFor="let semana of semanas" [ngClass]="[semana.activo? 'activo': '']" (click)="activarSemana(semana.name)"> {{ semana.name }}</div>
+      </div>
+      <div class="botones">
+        <button class="btn" (click)="openDialog()">Reporte</button>
+        <button class="btn">Anuncios</button>
+        <button class="btn" [routerLink]="['/subjects']">Calificaciones</button>
+        <button class="btn">Videoconferencias</button>
+        <button class="btn">Foro</button>
+      </div>
+    </div>
+  </div>
+</div>

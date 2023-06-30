@@ -1,0 +1,73 @@
+<div class="contenedor">
+<h2 class="header" mat-dialog-title>Salon A</h2>
+<mat-dialog-content class="mat-typography">
+  <h3 class="title">Matematica</h3>
+  <div *ngIf="!mostrarAlumnosAusentes; else mostrarALumnos">
+    <h3 class="title">Reporte</h3>
+    <div class="centrar">
+      <div class="tabla">
+        <div class="fila">
+          <span class="nombre">Total de alumnos</span>
+          <span class="valor">30</span>
+          <button class="accion">Ver Lista</button>
+        </div>
+        <div class="fila">
+          <span class="nombre">Alumnos Presentes</span>
+          <span class="valor">25</span>
+          <button class="accion" (click)="mostrarListaAlumnos('Presentes')">Ver Lista</button>
+        </div>
+        <div class="fila">
+          <span class="nombre">Alumnos Ausentes</span>
+          <span class="valor">5</span>
+          <button class="accion" (click)="mostrarListaAlumnos('Ausentes')">Ver Lista</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #mostrarALumnos>
+    <h3 class="title">Lista Alumnos {{ nombreSeccion }}</h3>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Nombre Alumno </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="faltas">
+        <th mat-header-cell *matHeaderCellDef> Faltas </th>
+        <td mat-cell *matCellDef="let element"> {{element.faltas}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="practica">
+        <th mat-header-cell *matHeaderCellDef> Practica </th>
+        <td mat-cell *matCellDef="let element"> {{element.practica}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="examen semestral">
+        <th mat-header-cell *matHeaderCellDef> Examen Semestral </th>
+        <td mat-cell *matCellDef="let element"> {{element.examenSemestral}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="examen final">
+        <th mat-header-cell *matHeaderCellDef> Examen Final </th>
+        <td mat-cell *matCellDef="let element"> {{element.examenFinal}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <div class="align-end">
+      <button class="boton-regresar" (click)="regresar()">Regresar</button>
+    </div>
+  </ng-template>
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="posicion">
+  <button class="btn-cancelar" mat-mini-fab mat-icon-button mat-dialog-close aria-label="Example icon button with a vertical three dot icon">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-dialog-actions>
+</div>

@@ -1,0 +1,83 @@
+.header {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+}
+
+.contenedor {
+  width: 600px;
+  height: 100%;
+  max-height: 700px;
+  position: relative;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.tabla {
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 15px;
+  border-bottom: 1px solid black;
+}
+
+.fila .valor {
+  text-align: center;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posicion {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.accion {
+  padding: 10px;
+  background-color: #486284;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cancelar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #486284;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
+.boton-regresar {
+  margin-top: 20px;
+  display: flex;
+  background-color: #486284;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.align-end {
+  display: flex;
+  justify-content: end;
+}
