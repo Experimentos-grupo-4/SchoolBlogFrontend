@@ -13,11 +13,11 @@ export class SidenavComponent implements OnInit {
   //fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
   fillerNav=[
     {"name":"Home", "route":"",icon:"home"},
-    {"name":"Datos personales", "route":"datos_personales",icon:"contacts"},
-    {"name":"Courses", "route":"courses",icon:"school"},
+    {"name":"Datos personales", "route":"personal-data",icon:"contacts"},
+    {"name":"Cursos", "route":"courses",icon:"school"},
     {"name":"Notificaciones", "route":"Notificaciones",icon:"notifications"},
     {"name":"Videoconferencias", "route":"Videoconferencias",icon:"play_lesson"},
-    {"name":"Evaluaciones", "route":"evaluaciones",icon:"check"},
+    {"name":"Evaluaciones", "route":"exams",icon:"check"},
     {"name":"Calificaciones", "route":"subjects",icon:"grade"},
     {"name":"Cerrar sesión", "route":"Cerrar sesión",icon:"logout"}
 

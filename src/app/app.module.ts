@@ -31,7 +31,7 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { CoursesComponent } from './courses/courses.component';
-import { PersonalDataComponent } from './personal-data/personal-data.component';
+import { PersonalDataComponent } from './personal-data/pages/personal-data/personal-data.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import {ProfesorService} from "./profesor/services/profesor.service";
 

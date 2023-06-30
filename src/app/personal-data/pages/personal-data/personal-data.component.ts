@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentsService} from "../../../students/services/students.service";
 
 @Component({
   selector: 'app-personal-data',
@@ -12,4 +13,5 @@ export class PersonalDataComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  protected readonly origin = origin;
 }

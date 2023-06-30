@@ -6,7 +6,7 @@ import { HomeComponent } from './public/home/home.component';
 import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 import {EvaluacionesComponent} from "./profesor/pages/evaluaciones/evaluaciones.component";
 import {SubjectsComponent} from "./subjects/pages/subjects/subjects.component";
-import {PersonalDataComponent} from "./personal-data/personal-data.component";
+import {PersonalDataComponent} from "./personal-data/pages/personal-data/personal-data.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'personal-data', component: PersonalDataComponent },
   { path: 'courses', component: CoursesComponent },
   { path: 'students', component: StudentsComponent },
-  { path: 'evaluaciones', component: EvaluacionesComponent},
+  { path: 'exams', component: EvaluacionesComponent},
   { path: 'subjects', component: SubjectsComponent}
 ];
 
