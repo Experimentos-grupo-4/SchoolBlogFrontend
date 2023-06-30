@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {AuthService} from "./security/services/auth.service";
-import {User} from "./security/model/user";
 import {Router} from "@angular/router";
 
 @Component({

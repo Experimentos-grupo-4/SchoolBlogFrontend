@@ -23,9 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSortModule } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
-import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 import { MatCardModule } from '@angular/material/card';
-import { AuthService } from './security/services/auth.service';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -34,7 +32,9 @@ import { CoursesComponent } from './courses/courses.component';
 import { PersonalDataComponent } from './personal-data/pages/personal-data/personal-data.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import {ProfesorService} from "./profesor/services/profesor.service";
-
+import { CoursesDetailComponent } from './courses-detail/courses-detail.component';
+import { CoursesReportComponent } from './courses-report/courses-report.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -42,12 +42,13 @@ import {ProfesorService} from "./profesor/services/profesor.service";
     AboutComponent,
     HomeComponent,
     StudentsComponent,
-    SignInComponent,
     SidenavComponent,
     CoursesComponent,
     PersonalDataComponent,
     EvaluacionesComponent,
-    SubjectsComponent
+    SubjectsComponent,
+    CoursesDetailComponent,
+    CoursesReportComponent
   ],
   imports: [
     BrowserModule,
@@ -69,9 +70,10 @@ import {ProfesorService} from "./profesor/services/profesor.service";
     MatDividerModule,
     MatSidenavModule,
     MatListModule,
-    LayoutModule
+    LayoutModule,
+    MatDialogModule
   ],
-  providers: [StudentsService, AuthService,ProfesorService],
+  providers: [StudentsService, ProfesorService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

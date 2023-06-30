@@ -9,13 +9,26 @@
 <div>
   <div class="cursos">
     <br> <br>
-    <h2> Salón A | Matemática </h2>
-    <nav>
-      <a mat-button [routerLink]="'/ACCEDER'">Evaluaciones</a>
-    </nav>
+
+    <div class="opcion">
+      <h2> Salón A | Matemática </h2>
+      <button [routerLink]="['/courses', 1]">Acceder</button>
+    </div>
+
     <br> <br>
-    <h2> Salón D | Trigonometría </h2>
+
+    <div class="opcion">
+      <h2> Salón D | Trigonometría </h2>
+      <button [routerLink]="['/courses', 2]">Acceder</button>
+    </div>
+
     <br> <br>
-    <h2> Salón D | Física </h2>
+    <div class="opcion">
+      <h2> Salón D | Física </h2>
+      <button [routerLink]="['/courses', 3]">Acceder</button>
+    </div>
   </div>
+  <!-- <nav>
+      <a mat-button [routerLink]="'/ACCEDER'">Evaluaciones</a>
+    </nav> -->
 </div>
