@@ -5,6 +5,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { ResetComponent } from './components/reset/reset.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from '../material/material.module'
 @NgModule({
@@ -17,6 +18,8 @@ import { MaterialModule } from '../material/material.module'
     CommonModule,
     AuthRoutingModule,
     MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }

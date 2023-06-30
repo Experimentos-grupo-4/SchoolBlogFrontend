@@ -35,3 +35,19 @@ mat-card-actions {
   display: block;
   margin: 0 auto;
 }
+
+.salioBien {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

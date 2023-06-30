@@ -1,7 +1,4 @@
-h2{
-  margin-left: 20px;
 
-}
 div.personal-data{
   margin-left: 20px;
   color: gray;
@@ -10,4 +7,16 @@ a{
   background-color:#486284 ;
   color: white;
   justify-self: center;
+}
+
+.datos {
+  margin: 30px;
+}
+
+.datos-personales, .datos-contacto, .datos-seguridad {
+  margin-bottom: 20px;
+}
+
+.datos-personales span, .datos-contacto span, .datos-seguridad span {
+  font-weight: bold;
 }

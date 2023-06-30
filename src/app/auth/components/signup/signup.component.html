@@ -2,15 +2,33 @@
   <mat-card class="col-lg-4 col-md-6 col-sm-7 col-xs-10">
     <mat-card-title>Iniciar Sesión</mat-card-title>
     <mat-card-content>
-      <form>
+      <form (ngSubmit)="registrarUsuario()">
+        <div *ngIf="mostrarMensaje" [ngClass]="[registrado? 'salioBien' : 'error']">
+          {{ mensaje}}
+        </div>
         <mat-form-field>
-          <input matInput placeholder="Correo electrónico" type="email" />
+          <input required matInput placeholder="Nombre" name="name" type="text" [(ngModel)]="usuario.name" />
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Contraseña" type="password" />
+          <input required matInput placeholder="Apellidos" name="lastname" type="text" [(ngModel)]="usuario.lastname" />
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder=" Repetir contraseña" type="password" />
+          <input required matInput placeholder="Telefono" name="phone" type="text" [(ngModel)]="usuario.phone" />
+        </mat-form-field>
+        <mat-form-field>
+          <input required matInput placeholder="Direccion" name="address" type="text" [(ngModel)]="usuario.address" />
+        </mat-form-field>
+        <mat-form-field>
+          <input required matInput placeholder="Fecha de Nacimiento" name="birthday" type="date" [(ngModel)]="usuario.birthday" />
+        </mat-form-field>
+        <mat-form-field>
+          <input required matInput placeholder="Correo electrónico" name="email" type="email" [(ngModel)]="usuario.email" />
+        </mat-form-field>
+        <mat-form-field>
+          <input required matInput placeholder="Contraseña" name="password" type="password" [(ngModel)]="usuario.password" />
+        </mat-form-field>
+        <mat-form-field>
+          <input required matInput placeholder=" Repetir contraseña" name="repeatPassword" type="password" [(ngModel)]="repeatPassword" />
         </mat-form-field>
         <button mat-raised-button color="primary" type="submit">
           Registrarse

@@ -1,3 +1,21 @@
-<div>
+<div class="datos">
   <h2><strong>Perfil</strong></h2>
+  <div class="datos-personales">
+    <h2>Datos Personales</h2>
+    <p class="campo"><span class="titulo">Nombre: </span>{{ usuario.name }}</p>
+    <p class="campo"><span class="titulo">Apellidos: </span>{{ usuario.lastname }}</p>
+    <p class="campo"><span class="titulo">Cumpleaños: </span>{{ usuario.birthday }}</p>
+    <p class="campo"><span class="titulo">Direccion: </span>{{ usuario.address }}</p>
+  </div>
+
+  <div class="datos-contacto">
+    <h2>Datos de Contacto</h2>
+    <p class="campo"><span class="titulo">Correo: </span>{{ usuario.email }}</p>
+    <p class="campo"><span class="titulo">Telefono: </span>{{ usuario.phone }}</p>
+  </div>
+
+  <div class="datos-seguridad">
+    <h2>Seguridad</h2>
+    <p class="campo"><span class="titulo">Contraseña: </span>*********</p>
+  </div>
 </div>
